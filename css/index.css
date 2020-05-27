@@ -1,3 +1,531 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
 body {
-  background-color: red;
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  font-family: 'Satisfy', cursive;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Satisfy', cursive;
+}
+p {
+  font-size: 1.6rem;
+  padding-bottom: 10px;
+}
+.container {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+@media (min-width: 400px) {
+  .navbar {
+    display: flex;
+    flex-direction: row;
+  }
+  .navbar nav {
+    margin-top: 2%;
+    padding-left: 26%;
+  }
+  .navbar .title {
+    margin-top: 1%;
+    font-size: 3rem;
+    padding-left: 1%;
+  }
+  .navbar a {
+    text-decoration: none;
+    text-align: center;
+    padding: 14px 16px;
+    background-color: #81814D;
+    color: black;
+    font-size: 1.5rem;
+  }
+  .navbar a:hover {
+    background-color: #687158;
+  }
+}
+@media (min-width: 700px) {
+  .navbar {
+    display: flex;
+    flex-direction: row;
+  }
+  .navbar nav {
+    margin-top: 2%;
+    padding-left: 42%;
+  }
+  .navbar .title {
+    margin-top: 1%;
+    font-size: 4rem;
+    padding-left: 1%;
+  }
+  .navbar a {
+    text-decoration: none;
+    text-align: center;
+    padding: 14px 16px;
+    background-color: #81814D;
+    color: black;
+    font-size: 1.9rem;
+  }
+  .navbar a:hover {
+    background-color: #687158;
+  }
+}
+@media (min-width: 800px) {
+  .navbar {
+    display: flex;
+    flex-direction: row;
+  }
+  .navbar nav {
+    margin-top: 1%;
+    padding-left: 63%;
+  }
+  .navbar .title {
+    margin-top: 1%;
+    font-size: 5rem;
+    padding-left: 1%;
+  }
+  .navbar a {
+    text-decoration: none;
+    text-align: center;
+    padding: 14px 16px;
+    background-color: #81814D;
+    color: black;
+    font-size: 2.9rem;
+  }
+  .navbar a:hover {
+    background-color: #687158;
+  }
+}
+@media (min-width: 400px) {
+  .social-media {
+    margin-top: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .social-media .fa {
+    padding: 20px;
+    margin-bottom: 3%;
+    font-size: 2rem;
+    width: auto;
+    height: auto;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 60%;
+  }
+  .social-media .fa:hover {
+    opacity: 0.7;
+  }
+  .social-media .fa-facebook {
+    background: black;
+    color: white;
+    margin-right: 1%;
+  }
+  .social-media .fa-twitter {
+    background: black;
+    color: white;
+    margin-right: 1%;
+  }
+  .social-media .fa-instagram {
+    background: black;
+    color: white;
+  }
+}
+@media (min-width: 700px) {
+  .social-media {
+    margin-top: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .social-media .fa {
+    padding: 20px;
+    font-size: 2.9rem;
+    margin-bottom: 3%;
+    width: auto;
+    height: auto;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 60%;
+  }
+  .social-media .fa:hover {
+    opacity: 0.7;
+  }
+  .social-media .fa-facebook {
+    background: black;
+    color: white;
+    margin-right: 1%;
+  }
+  .social-media .fa-twitter {
+    background: black;
+    color: white;
+    margin-right: 1%;
+  }
+  .social-media .fa-instagram {
+    background: black;
+    color: white;
+  }
+}
+@media (min-width: 800px) {
+  .social-media {
+    margin-top: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .social-media .fa {
+    padding: 20px;
+    font-size: 3.9rem;
+    margin-bottom: 3%;
+    width: auto;
+    height: auto;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 60%;
+  }
+  .social-media .fa:hover {
+    opacity: 0.7;
+  }
+  .social-media .fa-facebook {
+    background: black;
+    color: white;
+    margin-right: 1%;
+  }
+  .social-media .fa-twitter {
+    background: black;
+    color: white;
+    margin-right: 1%;
+  }
+  .social-media .fa-instagram {
+    background: black;
+    color: white;
+  }
+}
+@media (min-width: 400px) {
+  .image-one img {
+    margin-top: 9%;
+    width: 100%;
+    height: 485px;
+  }
+  .image-one .login {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 6%;
+  }
+  .image-one .login h2 {
+    font-size: 2rem;
+    margin-right: 3%;
+  }
+  .image-one .login button {
+    background-color: #81814D;
+    width: 15%;
+    height: auto;
+    font-family: 'Oxygen', sans-serif;
+    font-size: 1.5rem;
+  }
+  .image-one .login button:hover {
+    background-color: #687158;
+  }
+}
+@media (min-width: 700px) {
+  .image-one img {
+    margin-top: 5%;
+    width: 100%;
+    height: 850px;
+  }
+  .image-one .login {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 6%;
+  }
+  .image-one .login h2 {
+    font-size: 4rem;
+    margin-right: 5%;
+  }
+  .image-one .login button {
+    background-color: #81814D;
+    width: 15%;
+    height: auto;
+    font-family: 'Oxygen', sans-serif;
+    font-size: 1.5rem;
+  }
+  .image-one .login button:hover {
+    background-color: #687158;
+  }
+}
+@media (min-width: 800px) {
+  .image-one {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .image-one img {
+    margin-right: 20%;
+    margin-left: 20%;
+  }
+}
+@media (min-width: 400px) {
+  .flex-features {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .flex-features img {
+    width: 75%;
+    height: auto;
+  }
+  .flex-features p {
+    text-align: center;
+  }
+}
+@media (min-width: 700px) {
+  .flex-features {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .flex-features img {
+    width: 100%;
+    height: auto;
+  }
+  .flex-features p {
+    text-align: center;
+  }
+}
+@media (min-width: 400px) {
+  .team-title {
+    display: flex;
+    border-bottom: solid black 1px;
+  }
+}
+.team-title nav {
+  margin-top: 15%;
+}
+.team-title a {
+  text-decoration: none;
+  text-align: center;
+  font-size: 2rem;
+  background-color: #81814D;
+  color: black;
+  padding: 30%;
+}
+.team-title a:hover {
+  background-color: #687158;
+}
+.team-title h1 {
+  padding-left: 25%;
+  text-align: center;
+  font-size: 2.6rem;
+  margin-top: 15%;
+}
+@media (min-width: 400px) {
+  .team-pics img {
+    width: 40%;
+    height: auto;
+    border-radius: 20%;
+  }
+  .team-pics .adam {
+    padding: 5%;
+    display: flex;
+  }
+  .team-pics .adam h2 {
+    padding: 5%;
+    font-size: 2rem;
+  }
+  .team-pics .adam p {
+    margin-top: 5%;
+    padding-left: 5%;
+  }
+  .team-pics .marissa {
+    padding: 5%;
+    display: flex;
+  }
+  .team-pics .marissa h3 {
+    padding: 5%;
+    font-size: 2.6rem;
+  }
+  .team-pics .marissa p {
+    margin-top: 6%;
+  }
+  .team-pics .charlene {
+    padding: 5%;
+    display: flex;
+  }
+  .team-pics .charlene h4 {
+    padding: 5%;
+    font-size: 2.6rem;
+  }
+  .team-pics .charlene p {
+    margin-top: 6%;
+  }
+  .team-pics .angela {
+    padding: 5%;
+    display: flex;
+  }
+  .team-pics .angela h5 {
+    padding: 5%;
+    font-size: 2.6rem;
+  }
+  .team-pics .angela p {
+    margin-top: 6%;
+  }
+  .team-pics .damaris {
+    padding: 5%;
+    display: flex;
+  }
+  .team-pics .damaris h6 {
+    padding: 5%;
+    font-size: 2.6rem;
+  }
+  .team-pics .damaris p {
+    margin-top: 6%;
+  }
+}
+@media (min-width: 400px) {
+  .end {
+    background-color: #81814D;
+    padding: 10%;
+  }
+  .end h7 {
+    font-size: 2rem;
+    margin-left: 25%;
+    margin-top: 5%;
+  }
 }
