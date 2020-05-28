@@ -45,42 +45,80 @@
            }
     }
     @media @desktop {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
+         display:flex; 
+       
+        
         img {
-            margin-right: 20%;
-            margin-left: 20%
+          width: 50%;
+          height: auto; 
+          
+        }
+        .login {
+         .flex-login();
+        }
+        h2 {
+            margin-bottom: 3%;
+            text-align: center;
+            font-size: 1.0rem;
+        }
+        button {
+            width: 100%;
+            padding-right: 15%;
+            }
+            button:hover {
+                background-color: @green-two;
         }
       
     }
  }
 
 
-
-
-.flex-features {
+.features-title {
     @media @mobile {
-        .flex-box();
-        img {
-            width: 75%;
-            height: auto;
+        h3{
+            font-size: 1.6rem;
+            text-align: center;
+            margin-top: 5%;
         }
-        p {
-        text-align: center;
-        }
-       
     }
     @media @tablet {
-        .flex-box();
+        h3 {
+            font-size: 3.0rem;
+            text-align: center;
+        }
+    }
+    @media @desktop {
+        h3 {
+           margin-top: 6%;
+           font-size: 4.0rem;
+           margin-right: 1% 
+        }
+    }
+}
+.features-gallery {
+    @media @mobile {
+      .flex-gallery();
+      height: 10%;
         img {
-            width: 100%;
+            width: 55%;
             height: auto;
         }
-        p {
-        text-align: center;
+    }
+    @media @tablet {
+        display: flex;
+        margin-left: 18%;
+        img{
+            width: 95%;
+            height: auto;
         }
-        
+    }
+    @media @desktop {
+        display:flex;
+        margin-left: 33%;
+        margin-top: 8%;
+        img {
+            width: 100%;
+            height: auto; 
+        }
     }
 }
