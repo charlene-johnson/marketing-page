@@ -1,7 +1,7 @@
-.navbar{
+.navbar {
     @media @mobile {
-        display: flex;
-        flex-direction: row;
+            display: flex; 
+            flex-direction: row;
         nav {
             margin-top: 2%;
             padding-left: 26%;
@@ -9,72 +9,69 @@
         .title {
             margin-top: 1%;
             font-size: 3.0rem;
-            padding-left: 1%;
-            
-            
+            padding-left: 1%;        
         }
         a {
             text-decoration: none;
-            text-align: center;
+            text-align: center; 
             padding: 14px 16px;
-            background-color:@green-one;
+            .gradient-color();
             color: @main-color;
-            box-shadow:  1px 1px 30px 1px;
-            font-size: 1.5rem;
+            font-size:1.5rem;
         }
         a:hover {
-            background-color: @green-two;
+            background-image: linear-gradient(to right, @green-one, @green-two);
         }
     }
+    
     @media @tablet {
-        display: flex;
-        flex-direction: row;
+            display: flex; 
+            flex-direction: row;
         nav {
             margin-top: 2%;
-            padding-left: 42%;
+            padding-left: 38.9%;
+        }
+        .title {
+            margin-top: 2%;
+            font-size: 4.0rem;
+            padding-left: 1%;        
+        }
+        a {
+            text-decoration: none;
+            text-align: center; 
+            padding: 14px 16px;
+            .gradient-color();
+            color: @main-color;
+            font-size:2.3rem;
+        }
+        a:hover {
+            background-image: linear-gradient(to right, @green-one, @green-two);
+        } 
+
+    }
+    
+    @media @desktop {
+            display: flex; 
+            flex-direction: row;
+        nav {
+            margin-top: 1%;
+            padding-left: 60.5%;
         }
         .title {
             margin-top: 1%;
             font-size: 4.0rem;
-            padding-left: 1%;
+            padding-left: 1%;        
         }
         a {
             text-decoration: none;
-            text-align: center;
+            text-align: center; 
             padding: 14px 16px;
-            background-color:@green-one;
+            .gradient-color();
             color: @main-color;
-            box-shadow:  0 1px 25px 1px;
-            font-size: 1.9rem;
+            font-size:2.3rem;
         }
         a:hover {
-            background-color: @green-two;
+            background-image: linear-gradient(to right, @green-one, @green-two);
         } 
-    }
-    @media @desktop {
-        display: flex;
-        flex-direction: row;
-        nav {
-            
-            margin-top: 1%;
-            padding-left: 63%;
-        }
-        .title {
-            margin-top: 1%;
-            font-size: 5.0rem;
-            padding-left: 1%;
-        }
-        a {
-            text-decoration: none;
-            text-align: center;
-            padding: 14px 16px;
-            background-color:@green-one;
-            color: @main-color;
-            font-size: 2.9rem;
-            box-shadow:  0 1px 25px 1px;
-        }
-        a:hover {
-            background-color: @green-two;
-        }  
     }
 }
