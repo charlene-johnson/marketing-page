@@ -1,109 +1,125 @@
 .team-title {
     @media @mobile {
-        display: flex;
-        border-bottom:solid black 1px;
-    }
-    nav {
-        margin-top: 15%;
-    }
-    a {
-        text-decoration: none;
-        text-align: center;
-        font-size: 2.0rem;
-        background-color: @green-one;
-        color: @main-color;
-        padding: 30%;
-    }
-    a:hover {
-      background-color: @green-two;  
-    }
-    h1 {
-        padding-left: 25%;
-        text-align: center;
-        font-size: 2.6rem;
-        margin-top: 15%;
+        display:flex;
+        flex-direction: row;
+        border-bottom: black solid 1px;
+        margin-top: 1%;
+        a {
+            text-decoration: none;
+            color: @main-color;
+            background-color: @green-one;
+            font-size: 3.0rem;
+            padding: 6%;
+            
+        }
+        h1 {
+            font-size: 4.0rem;
+            margin-left: 18%;
+        }
+
     }
     @media @tablet {
-        
+        h1 {
+            margin-left: 25%;
+        }
+    }
+    @media @desktop {
+        a {
+            text-decoration: none;
+            color: @main-color;
+            background-color: @green-one;
+            font-size: 2.8rem;
+            padding: 10%;
+        }
+        h1 {
+            font-size: 4.0rem;
+            margin-left: 38%;
+        }
     }
 }
 
 .team-pics {
     @media @mobile {
-        
-       img {
-            width: 40%;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0 1px;
+        img {
+            width: 120%;
             height: auto;
-            border-radius: 20%
+            border-radius: 50%;
+            margin-top: 8px;
+            vertical-align: middle;
         }
-        .adam {
-            padding: 5%;
+        .team-mate {
+            flex: 25%;
+            max-width: 30%;
+            padding: 0 4px;
+            margin-left: 15%; 
+            flex-direction: column;
+        }
+    }
+    @media @tablet {
             display: flex;
+            flex-flow: row nowrap;
+            align-items: center;
+             padding: 0 1px;
+            background-image:url(https://i.postimg.cc/sfPXv31Y/184636-00-2x.jpg);
+            background-repeat: round;
+            img {
+                width: 75%;
+                height: auto;
+                border-radius: 50%;
+                margin-top: 8px;
+                vertical-align: middle;
+            }
             h2 {
-                padding: 5%;
                 font-size: 2.0rem;
-            }
-            p {
-             margin-top: 5%; 
-             padding-left: 5%; 
-            }
-
-        }
-        .marissa {
-            padding: 5%;
-            display: flex;
-            h3 {
-                padding: 5%; 
-                font-size: 2.6rem;
+                margin-top: 1%;
             }
             p{
-                margin-top: 6%;    
+                margin-top: 2%;
+                font-size: 1.9rem;
             }
-        }
-        .charlene {
-            padding: 5%;
-            display: flex;
-            h4 {
-                padding: 5%;
-                font-size: 2.6rem;
-            }
-            p{
-                margin-top: 6%;
-            }
-        }
-        .angela {
-            padding: 5%;
-            display: flex;
-            h5 {
-                padding: 5%; 
-                font-size: 2.6rem;
-            }
-            p{
-                margin-top: 6%;  
-            }
-        }
-        .damaris {
-            padding: 5%;
-            display: flex;
-            h6 {
-                padding: 5%;
-                font-size: 2.6rem;
-            }
-            p {
-                margin-top: 6%; 
-            }
+    }
+    @media @desktop {
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+         padding: 0 1px;
+         background-image:url(https://i.postimg.cc/sfPXv31Y/184636-00-2x.jpg);
+         background-repeat: round;
+         img {
+            width: 50%;
+            height: auto;
+            border-radius: 50%;
+            margin-top: 3%;
+            vertical-align: middle;
         }
     }
    
 }
 .end {
     @media @mobile {
-    background-color: @green-one;
-    padding: 10%;
-    h7 {
+        background-color: @green-one;
+        padding: 5%;
+        h7 {
         font-size: 2.0rem;
-        margin-left: 25%;
+        margin-left: 23%;
         margin-top: 5%;
+        }
     }
-  }
+  @media @tablet {
+        h7 {
+          margin-left: 31%;
+        }
+    }
+  @media @desktop {
+      height: 70px;
+      padding: 2%;
+      h7 {
+          font-size: 2.9rem;
+          
+          margin-left: 36%;
+        }
+    }
 }

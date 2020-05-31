@@ -511,100 +511,126 @@ p {
 @media (min-width: 500px) {
   .team-title {
     display: flex;
-    border-bottom: solid black 1px;
+    flex-direction: row;
+    border-bottom: black solid 1px;
+    margin-top: 1%;
+  }
+  .team-title a {
+    text-decoration: none;
+    color: black;
+    background-color: #81814D;
+    font-size: 3rem;
+    padding: 6%;
+  }
+  .team-title h1 {
+    font-size: 4rem;
+    margin-left: 18%;
   }
 }
-.team-title nav {
-  margin-top: 15%;
+@media (min-width: 700px) {
+  .team-title h1 {
+    margin-left: 25%;
+  }
 }
-.team-title a {
-  text-decoration: none;
-  text-align: center;
-  font-size: 2rem;
-  background-color: #81814D;
-  color: black;
-  padding: 30%;
-}
-.team-title a:hover {
-  background-color: #687158;
-}
-.team-title h1 {
-  padding-left: 25%;
-  text-align: center;
-  font-size: 2.6rem;
-  margin-top: 15%;
+@media (min-width: 800px) {
+  .team-title a {
+    text-decoration: none;
+    color: black;
+    background-color: #81814D;
+    font-size: 2.8rem;
+    padding: 10%;
+  }
+  .team-title h1 {
+    font-size: 4rem;
+    margin-left: 38%;
+  }
 }
 @media (min-width: 500px) {
+  .team-pics {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 1px;
+  }
   .team-pics img {
-    width: 40%;
+    width: 120%;
     height: auto;
-    border-radius: 20%;
+    border-radius: 50%;
+    margin-top: 8px;
+    vertical-align: middle;
   }
-  .team-pics .adam {
-    padding: 5%;
+  .team-pics .team-mate {
+    flex: 25%;
+    max-width: 30%;
+    padding: 0 4px;
+    margin-left: 15%;
+    flex-direction: column;
+  }
+}
+@media (min-width: 700px) {
+  .team-pics {
     display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    padding: 0 1px;
+    background-image: url(https://i.postimg.cc/sfPXv31Y/184636-00-2x.jpg);
+    background-repeat: round;
   }
-  .team-pics .adam h2 {
-    padding: 5%;
+  .team-pics img {
+    width: 75%;
+    height: auto;
+    border-radius: 50%;
+    margin-top: 8px;
+    vertical-align: middle;
+  }
+  .team-pics h2 {
     font-size: 2rem;
+    margin-top: 1%;
   }
-  .team-pics .adam p {
-    margin-top: 5%;
-    padding-left: 5%;
+  .team-pics p {
+    margin-top: 2%;
+    font-size: 1.9rem;
   }
-  .team-pics .marissa {
-    padding: 5%;
+}
+@media (min-width: 800px) {
+  .team-pics {
     display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    padding: 0 1px;
+    background-image: url(https://i.postimg.cc/sfPXv31Y/184636-00-2x.jpg);
+    background-repeat: round;
   }
-  .team-pics .marissa h3 {
-    padding: 5%;
-    font-size: 2.6rem;
-  }
-  .team-pics .marissa p {
-    margin-top: 6%;
-  }
-  .team-pics .charlene {
-    padding: 5%;
-    display: flex;
-  }
-  .team-pics .charlene h4 {
-    padding: 5%;
-    font-size: 2.6rem;
-  }
-  .team-pics .charlene p {
-    margin-top: 6%;
-  }
-  .team-pics .angela {
-    padding: 5%;
-    display: flex;
-  }
-  .team-pics .angela h5 {
-    padding: 5%;
-    font-size: 2.6rem;
-  }
-  .team-pics .angela p {
-    margin-top: 6%;
-  }
-  .team-pics .damaris {
-    padding: 5%;
-    display: flex;
-  }
-  .team-pics .damaris h6 {
-    padding: 5%;
-    font-size: 2.6rem;
-  }
-  .team-pics .damaris p {
-    margin-top: 6%;
+  .team-pics img {
+    width: 50%;
+    height: auto;
+    border-radius: 50%;
+    margin-top: 3%;
+    vertical-align: middle;
   }
 }
 @media (min-width: 500px) {
   .end {
     background-color: #81814D;
-    padding: 10%;
+    padding: 5%;
   }
   .end h7 {
     font-size: 2rem;
-    margin-left: 25%;
+    margin-left: 23%;
     margin-top: 5%;
+  }
+}
+@media (min-width: 700px) {
+  .end h7 {
+    margin-left: 31%;
+  }
+}
+@media (min-width: 800px) {
+  .end {
+    height: 70px;
+    padding: 2%;
+  }
+  .end h7 {
+    font-size: 2.9rem;
+    margin-left: 36%;
   }
 }
