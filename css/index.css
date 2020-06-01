@@ -401,7 +401,7 @@ p {
     font-family: oxygen;
     border: outset ;
     width: 60px;
-    padding: 20%;
+    height: 49px;
   }
   .login button:hover {
     background-color: #687158;
@@ -432,6 +432,7 @@ p {
     font-family: oxygen;
     border: outset ;
     width: 60px;
+    height: 67px;
   }
   .login button:hover {
     background-color: #687158;
@@ -462,6 +463,7 @@ p {
     font-family: oxygen;
     border: outset ;
     width: 65px;
+    height: 60px;
     font-size: 2rem;
     text-align: center;
   }
