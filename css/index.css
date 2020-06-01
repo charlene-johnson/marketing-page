@@ -401,6 +401,7 @@ p {
     font-family: oxygen;
     border: outset ;
     width: 60px;
+    padding: 20%;
   }
   .login button:hover {
     background-color: #687158;
