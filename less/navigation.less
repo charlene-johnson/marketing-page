@@ -1,0 +1,77 @@
+.navbar {
+    @media @mobile {
+            display: flex; 
+            flex-direction: row;
+        nav {
+            margin-top: 2%;
+            padding-left: 26%;
+        }
+        .title {
+            margin-top: 1%;
+            font-size: 3.0rem;
+            padding-left: 1%;        
+        }
+        a {
+            text-decoration: none;
+            text-align: center; 
+            padding: 14px 16px;
+            .gradient-color();
+            color: @main-color;
+            font-size:1.5rem;
+        }
+        a:hover {
+            background-image: linear-gradient(to right, @green-one, @green-two);
+        }
+    }
+    
+    @media @tablet {
+            display: flex; 
+            flex-direction: row;
+        nav {
+            margin-top: 2%;
+            padding-left: 38.9%;
+        }
+        .title {
+            margin-top: 2%;
+            font-size: 4.0rem;
+            padding-left: 1%;        
+        }
+        a {
+            text-decoration: none;
+            text-align: center; 
+            padding: 14px 16px;
+            .gradient-color();
+            color: @main-color;
+            font-size:2.3rem;
+        }
+        a:hover {
+            background-image: linear-gradient(to right, @green-one, @green-two);
+        } 
+
+    }
+    
+    @media @desktop {
+            display: flex; 
+            flex-direction: row;
+        nav {
+            margin-top: 1%;
+            padding-left: 60.5%;
+        }
+        .title {
+            margin-top: 1%;
+            font-size: 4.0rem;
+            padding-left: 1%;        
+        }
+        a {
+            text-decoration: none;
+            text-align: center; 
+            padding: 14px 16px;
+            .gradient-color();
+            color: @main-color;
+            font-size:2.3rem;
+        }
+        a:hover {
+            background-image: linear-gradient(to right, @green-one, @green-two);
+        } 
+    }
+}
