@@ -400,7 +400,7 @@ p {
     background-color: #c7beae;
     font-family: oxygen;
     border: outset ;
-    width: 60px;
+    width: 59px;
     height: 49px;
   }
   .login button:hover {
@@ -432,7 +432,7 @@ p {
     font-family: oxygen;
     border: outset ;
     width: 60px;
-    height: 67px;
+    height: 69px;
   }
   .login button:hover {
     background-color: #687158;
@@ -463,7 +463,7 @@ p {
     font-family: oxygen;
     border: outset ;
     width: 65px;
-    height: 60px;
+    height: 63px;
     font-size: 2rem;
     text-align: center;
   }
@@ -508,7 +508,7 @@ p {
 @media (min-width: 800px) {
   .features-gallery img {
     width: 70%;
-    margin-left: 155%;
+    margin-left: 180%;
   }
 }
 @media (min-width: 500px) {
